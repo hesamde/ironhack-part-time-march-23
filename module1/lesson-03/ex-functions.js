@@ -31,15 +31,34 @@ function numberOfStars(length){
 console.log(numberOfStars(3)) // "***"
 console.log(numberOfStars(5)) // "*****"
 
-function printStars(word){
-    return "*".repeat(word.length);
-}
+// function printStars(word){
+//     return "*".repeat(word.length);
 
-console.log('printStars', printStars("Johnny"))
+
+// console.log('printStars', printStars("Johnny"))
 // Write a function that takes in two parameters "length" and "height" and prints out a rectangle of stars
 // i.e: 3,2 ---> ***
 //               ***
 
+function numberOfStars(length,){
+    return "*".repeat(length);
+}
+
+console.log(numberOfStars(3))
+console.log(numberOfStars(5)) 
+
+function printStars(word){
+    return "*".repeat(word.length);
+}
 // Write a function that takes in an array of integers and returns the average of the array
 // i.e: [2,5,8] ---> 5
 //      [1,2,3] ---> 2
+
+function calculateAverage(numbers) {
+    let sum = 0;
+    for (let i = 0; i < numbers.length; i++) {
+      sum += numbers[i];
+    }
+    return sum / numbers.length;
+}
+  
